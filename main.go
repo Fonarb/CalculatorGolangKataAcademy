@@ -3,7 +3,6 @@ package main
 import (
 	rome_digit "awesomeProject/operat"
 	"bufio"
-	"errors"
 	"fmt"
 	"os"
 	"regexp"
@@ -62,9 +61,10 @@ func getOperationValue(text string) string {
 		val = "-"
 	} else if strings.Contains(text, "/") {
 		val = "/"
+	} else {
+		fmt.Println("Данная операция не поддерживается")
+		os.Exit(1)
 	}
-	errors.New("Данная операция не поддерживается")
-
 	return val
 }
 func isDigit(s string) bool {
