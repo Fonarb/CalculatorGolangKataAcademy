@@ -20,6 +20,7 @@ func main() {
 	if len(array) > 2 {
 		fmt.Println("Должно быть только 2 числа")
 		os.Exit(1)
+
 	}
 	x := array[0]
 	y := array[1]
