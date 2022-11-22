@@ -1,1 +1,1 @@
-# CalculatorGolangKataAcademy
+# Calculator for KataAcademy
