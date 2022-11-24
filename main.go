@@ -75,7 +75,7 @@ func getOperationValue(text string) string {
 func isDigit(s string) bool {
 	var flag bool
 	atoi, _ := strconv.Atoi(s)
-	if atoi > 1 {
+	if atoi >= 1 {
 		flag = true
 	} else {
 
