@@ -45,7 +45,7 @@ func main() {
 		}
 		result := rome_digit.GetResult(x1, operationValue, y1)
 		if result <= 0 {
-			fmt.Println("Ошибка, в римских числах нет 0")
+			fmt.Println("Ошибка, в римских числах нет 0 и отрицательных значений")
 			os.Exit(1)
 		}
 		res := intToRome(result)
